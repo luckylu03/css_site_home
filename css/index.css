@@ -7,8 +7,12 @@ body {
 
 .main_header {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+.main_header #main_header_pic {
+    width: 70%;
 }
 
 .menu {
@@ -23,6 +27,7 @@ body {
     text-transform: uppercase;
     font-family: sans-serif;
 }
+
 .menu a:hover {
     text-decoration: underline;
 }
@@ -31,21 +36,27 @@ body {
     display: flex;
     justify-content: center;
 }
- 
-#gen_pic {
-    max-width: 50%;
-    float: left;
-    margin: auto;
-}
 
 .intro_head {
     display: flex;
     justify-content: center;
 }
-.intro_t {
-    display: flex;
-    align-items: flex-start;
+
+#gen_pic {
+    max-width: 50%;
+    float: left;
 }
+
+.intro_p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.intro_text {
+    margin-top: 1px;
+    padding-left: 52%;
+}
+
 .lesson_head {
     display: flex;
     justify-content: center;
@@ -57,95 +68,127 @@ body {
     grid-gap: 2%;
     padding: 2%;
 }
-#lesson1, #lesson2, #lesson3, #lesson4 {
+
+#lesson1,
+#lesson2,
+#lesson3,
+#lesson4 {
     width: 100%;
 }
+
 .button_lesson {
     width: 100%;
+    background-color: orange;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button_lesson:hover {
+    background-color: white;
+    border: 2px solid orange;
+    color: black;
 }
 
 .link_head {
     display: flex;
     justify-content: center;
 }
+
 .link_pics {
     display: flex;
     justify-content: space-around;
+    width: 30%;
 }
+
 .link_pics #facebook {
-    height: 70px;
-    width: 70px;
+    align-items: center;
+    max-height: 70px;
+    max-width: 70px;
 }
+
 .link_pics #instagram {
-    height: 70px;
-    width: 70px;
+    max-height: 70px;
+    max-width: 70px;
 }
+
 .link_pics #youtube {
-    height: 70px;
-    width: 70px;
+    max-height: 70px;
+    max-width: 70px;
 }
+
 .contact_head {
     display: flex;
     justify-content: center;
 }
+
 .contact {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 2%;
     padding: 2%;
+    content-gap: 0;
 }
+
 .contact .contact_name {
     order: 2;
 }
+
 .contact .contact_email {
     order: 3;
 }
+
 .contact .contact_message {
     grid-column: 1;
     grid-row: 1 / 4;
     order: 1;
 }
+
 .contact .submit {
     order: 4;
 }
+
 .contact #contact_message {
     width: 100%;
     height: 93%;
 }
+
 .contact #contact_name {
     width: 100%;
 }
+
 .contact #contact_email {
     width: 100%;
 }
+
 .contact #submit {
     width: 100%;
 }
 
 @media (max-width: 600px) {
-    .main_header {
-        order: -1;
-    }
+
     .lesson_list {
         grid-template-columns: 1fr;
-        grid-gap: 2%;
+        grid-column-gap: 2%;
         padding: 2%;
     }
+    .link_head {
+        margin-top: 54px;
+    }
     .contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 2%;
-    padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 2%;
+        padding: 2%;
     }
     .link {
         padding: 3%
     }
 }
-
-
-
-
-
-
