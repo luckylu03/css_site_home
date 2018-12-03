@@ -127,11 +127,35 @@ body {
     padding-left: 40%;
 }
 
-.contact_head {
+.contact-form-holder {
     display: flex;
     justify-content: center;
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.contact-form-holder #contact {
+    width: 40%;
+    padding: 2%;
+    background-color: grey;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
     font-family: 'Cormorant Upright', serif;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.contact-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.9rem;
 }
 
 .contact {
@@ -237,6 +261,75 @@ footer {
     .link_pic #instagram,
     .link_pic #youtube {
         max-width: 50%;
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 310px) {
+    
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (max-width: 230px) {
+
+    .main_header {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .left-sign,
+    .right-sign,
+    .forBeginers,
+    .guitarLesson {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .link_pics {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .link_pic #facebook,
+    .link_pic #instagram,
+    .link_pic #youtube {
+        max-width: 60px;
+        padding-left: 35%;
+    }
+}
+
+@media (max-width: 200px) {
+    .guitarLesson {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 171px) {
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .contacts,
+    .about-us,
+    .courses,
+    .home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link_pic #facebook,
+    .link_pic #instagram,
+    .link_pic #youtube {
+        max-width: 60px;
         padding-left: 25%;
     }
 }

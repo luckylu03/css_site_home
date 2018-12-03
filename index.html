@@ -11,16 +11,24 @@
 
 <body>
     <div class="menu">
-        <a href="contacts.html">contact</a>
-        <a href="AboutUs.html">about-us</a>
-        <a href="Courses.html">courses</a>
-        <a href="Home.html">home</a>
+        <div class="contacts">
+            <a href="#">contacts</a>
+        </div>
+        <div class="about-us">
+            <a href="#">about-us</a>
+        </div>
+        <div class="courses">
+            <a href="#">courses</a>
+        </div>
+        <div class="home">
+            <a href="#">home</a>
+        </div>
     </div>
     <header class="main_header">
-        <h1>―●</h1>
-        <h1>Guitar lessons</h1>
-        <p>For begginers</p>
-        <h1>●―</h1>
+        <h1 class="left-sign">―</h1>
+        <h1 class="guitarLesson">Guitar lessons</h1>
+        <p class="forBeginers">For begginers</p>
+        <h1 class="right-sign">―</h1>
     </header>
 
     <section>
@@ -79,29 +87,15 @@
         </div>
     </section>
 
-    <section>
-        <h2 class="contact_head">Contact us</h2>
-    </section>
-    <section>
-        <form class="contact" method="post" action="https://formspree.io/starovierov0311@gmail.com">
-            <label class="contact_name">
-                <input id="contact_name" type="text" Placeholder="name" required name="name of p"/>
-            </label>
-            <label class="contact_email">
-                <input id="contact_email" type="Email" Placeholder="Email" required name="Email"/>
-            </label>
-            <label class="contact_message">
-                <input id="contact_message" type="text" Placeholder="Your message..." required name="message"/>
-            </label>
-            <label class="submit">
-                <input id="submit" type="submit" value="Submit"/>
-            </label>
-        </form>
+    <section class="contact-form-holder">
+        <button id="contact">Contact us</button>
     </section>
 
     <footer>
         <p>GuitarTeacher.com © Copyright 2018. All rights reserved.</p>
     </footer>
+
+    <script src="js/index.js" ></script>
 </body>
 
 </html>
